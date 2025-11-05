@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+#spring:
+#  application:
+#    name: application
+#  profiles:
+#    active: dev,db
+#
+
+spring:
+  datasource:
+    username: root
+    password: 362258
+    url: jdbc:mysql://localhost:3306/mawaru?useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location:  classpath:/mybatis/config/mybatis-config.xml
